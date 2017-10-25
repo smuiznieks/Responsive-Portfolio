@@ -148,31 +148,36 @@ textarea {
 	background-color: #007F79;
 }
 
-.portfolio img {
-	width: 274px;
-	height: 200px;
-	margin-bottom: 40px;
-}
-
-.portfolio h4 {
-	width: 274px;
-	padding: 20px 0 20px 0;
-	font-size: 18px;
-	position: absolute;
-	z-index: 2;
-	bottom: 40px;
-}
-
-.portfolio1, .portfolio3, .portfolio5 {
-	float: left;
-}
-
-.portfolio2, .portfolio4 {
-	float: right;
-}
-
-.portfolio1, .portfolio2, .portfolio3, .portfolio4, .portfolio5 img {
+.work {
 	position: relative;
+	float: left;
+	width: 260px;
+	margin: 20px 0 25px 0;
+	overflow: auto;
+}
+
+.work:nth-child(even) {
+	margin-left: 40px;
+}
+
+.work img {
+	width: 100%;
+	height: 150px;
+	border: 0 none;
+}
+
+.work h4 {
+	position: absolute;
+  	bottom: 20px;
+  	width: 100%;
+  	padding: 15px;
+  	margin-bottom: 0;
+  	font-weight: 300;
+  	line-height: 30px;
+  	color: #fff;
+  	text-align: center;
+  	background: #4aaaa5;
+  	border-bottom: 0;
 }
 
 footer {
@@ -190,3 +195,80 @@ footer {
 	clear: both;
 }
 
+@media screen and (max-width: 980px) {
+
+	.header, .container {
+		width: 750px;
+	}
+	
+	article, aside {
+		margin: 20px auto;
+	}
+
+	article {
+		width: 60%;
+	}
+
+	aside {
+		width: 35%;
+	}
+
+	.work {
+		float: none;
+		padding: 0px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	label, input, textarea {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	
+	.header, .container {
+		width: 700px;
+	}
+
+	article, aside {
+		float: none;
+		margin: 20px auto;
+		width: 80%;
+	}
+
+	
+}
+
+@media screen and (max-width: 640px) {
+	
+	.container {
+		width: 500px;
+	}
+
+	.header {
+		display: static;
+		width: 100%;
+		text-align: center;
+	}
+
+	h1 {
+		width: 100%;
+		padding: 10px 0;
+		margin: 0 auto;
+		float: none;
+	}
+
+	nav {
+		width: 100%;
+		position: relative;
+		float: none;
+	}
+
+	article, aside {
+		float: none;
+		margin: 20px auto;
+		width: 80%;
+	}
+}
