@@ -239,10 +239,6 @@ footer {
 		width: 80%;
 	}
 
-	.portfolio {
-		position: static;
-	}
-
 	.work {
 		position: relative;
 		float: left;
@@ -253,6 +249,12 @@ footer {
 
 	.work:nth-child(even) {
 		margin-left: 40px;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: block;
+		clear: both;
 	}
 	
 }
@@ -288,10 +290,9 @@ footer {
 		width: 80%;
 	}
 
-	.media::after {
-		content: "";
-		display: block;
-		clear: both;
+	.about-me {
+		width: 100%;
+		padding-bottom: 10px;
 	}
 
 	.work {
