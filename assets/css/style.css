@@ -213,15 +213,16 @@ footer {
 		width: 35%;
 	}
 
+	label, input, textarea {
+		width: 100%;
+	}
+
 	.work {
 		float: none;
 		padding: 0px;
 		margin: 0 auto;
 		display: block;
-	}
-
-	label, input, textarea {
-		width: 100%;
+		width: 80%;
 	}
 
 }
@@ -238,13 +239,28 @@ footer {
 		width: 80%;
 	}
 
+	.portfolio {
+		position: static;
+	}
+
+	.work {
+		position: relative;
+		float: left;
+		width: 45%;
+		margin: 10px auto;
+		overflow: auto;
+	}
+
+	.work:nth-child(even) {
+		margin-left: 40px;
+	}
 	
 }
 
 @media screen and (max-width: 640px) {
 	
 	.container {
-		width: 500px;
+		width: 400px;
 	}
 
 	.header {
@@ -270,5 +286,23 @@ footer {
 		float: none;
 		margin: 20px auto;
 		width: 80%;
+	}
+
+	.media::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.work {
+		float: none;
+		padding: 0px;
+		margin: 10px auto;
+		width: 80%;
+	}
+
+	.work:nth-child(even) {
+		padding: 0px;
+		margin: 10px auto;
 	}
 }
